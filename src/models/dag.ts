@@ -10,5 +10,5 @@ interface Edge<T> {
 
 class Dag<T> {
   constructor(private root: Vertex<T>) {}
-  public addNode()
+  public addNode() {}
 }

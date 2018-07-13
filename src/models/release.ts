@@ -1,5 +1,6 @@
-import { Configuration } from "./configuration";
+import { Configuration } from "src/models/configuration";
+import { Artifact } from "src/models/artifact"
 
 export class Release {
-  constructor(artifact: Artifact, configuration: Configuration) {}
+  constructor(readonly artifact: Artifact, readonly configuration: Configuration) {}
 }
