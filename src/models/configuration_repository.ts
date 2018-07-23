@@ -1,6 +1,16 @@
+import { Configuration } from "./configuration";
+
 /*
 * Provides an API for publishing and retrieving configurations.
 */
 export class ConfigurationRepository {
-  constructor(private initialValue: Map<string, Map<string, string>>) {}
+  constructor(private initialState: Array<Configuration>) {}
+
+  public set(configuration: Configuration) {
+
+  }
+
+  public get() {}
+
+  public list() {}
 }
