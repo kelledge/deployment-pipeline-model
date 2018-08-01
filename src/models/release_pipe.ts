@@ -6,6 +6,6 @@ type DeploymentReason = 'featureIncomplete' | 'bugFix' | 'release'
 export class ReleasePipe {
   constructor(private destinationEnvironment: Environment) {}
   public forward(artifact: Artifact, reason: DeploymentReason) {
-    this.destinationEnvironment.releaseArtifact()
+    this.destinationEnvironment.releaseArtifact(artifact)
   }
 }
